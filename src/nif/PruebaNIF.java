@@ -3,8 +3,9 @@ package nif;
 public class PruebaNIF {
 
 	public static void main(String[] args) {
-		long dni;
-		leer(dni);
+		NIF nif1 = new NIF();
+		nif1.obtener();
+		nif1.toString();
 
 	}
 

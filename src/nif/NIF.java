@@ -9,12 +9,10 @@ public class NIF {
 	
 	public NIF() {};
 	
-	public char leer(long DNI) {
-		Scanner scan = new Scanner(System.in);
-		int division=0;
-		System.out.println("introduce el numero de dni");
-		DNI=scan.nextLong();
-		division=(int)DNI%23;
+	public char obtener () {
+		leer(DNI);
+		int division = 0;
+		division = (int)DNI%23;
 		
 		if(division==0) {
 			letra='T';
@@ -66,6 +64,15 @@ public class NIF {
 			System.out.println("algo raro ha pasado "+division);
 		}
 		return letra;
+	}
+	
+	public long leer(long DNI) {
+		Scanner scan = new Scanner(System.in);
+		
+		System.out.println("introduce el numero de dni");
+		DNI=scan.nextLong();
+		
+		return DNI;
 	}
 	
 	
@@ -154,7 +161,7 @@ public class NIF {
 		
 		return letra;
 	}
-	 */
+	*/
 	
 	public String toString() {
 		return "El DNI con letra es "+DNI+"-"+letra;
