@@ -48,7 +48,7 @@ public class JuegoDeDados {
 				|| dado6.retornarValor() == dado4.retornarValor()) {
 			resultado2 = resultado2 + 5;
 		}
-
+		System.out.println();
 		System.out.println("El valor final de J1 es: " + resultado1);
 		System.out.println("El valor final de J2 es: " + resultado2);
 		if (resultado1 > resultado2) {
