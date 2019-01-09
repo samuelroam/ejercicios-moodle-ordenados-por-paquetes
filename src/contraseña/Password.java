@@ -1,5 +1,7 @@
 package contraseña;
 
+import java.util.Scanner;
+
 public class Password {
 
 	private String contraseña;
@@ -31,4 +33,20 @@ public class Password {
 		return fuerte;
 	}
 
+	public String generarPassword() {
+		pedirContraseña();
+//		if(contraseña.length()<10) {
+//			pedirContraseña();
+//		}
+		while(contraseña.length()<10) {
+			pedirContraseña();
+		}
+		return contraseña;
+	}
+	
+	public void pedirContraseña() {
+		Scanner scan = new Scanner(System.in);
+		contraseña = scan.nextLine();
+		
+	}
 }
