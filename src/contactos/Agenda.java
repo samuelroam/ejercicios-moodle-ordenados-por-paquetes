@@ -1,7 +1,7 @@
 package contactos;
 
 public class Agenda {
-	private static String nombre;
+	private String nombre;
 	private int telefono;
 	
 	public Agenda(String nombre, int telefono) {
@@ -9,7 +9,7 @@ public class Agenda {
 		this.telefono=telefono;
 	}
 	
-	public static String getNombre() {
+	public String getNombre() {
 		return nombre;
 	}
 	public void setNombre(String nombre) {
